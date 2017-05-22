@@ -1,0 +1,865 @@
+(dp0
+S'buildDestination'
+p1
+V/Users/Kars/Desktop/ttp-starter-project/ttp-starter.html
+p2
+sS'saveDestination'
+p3
+V/Users/Kars/Desktop/ttp-starter-project/ttp-starter.tws
+p4
+sS'metadata'
+p5
+(dp6
+sS'target'
+p7
+S'jonah'
+p8
+sS'storyPanel'
+p9
+(dp10
+S'widgets'
+p11
+(lp12
+(dp13
+S'selected'
+p14
+I00
+sS'pos'
+p15
+(lp16
+F10.0
+aF150.0
+asS'passage'
+p17
+(itiddlywiki
+Tiddler
+p18
+(dp20
+S'text'
+p21
+V/%\u000aDialog begins here\u000aWrap your dialog macros around \u000a<<timedreplace [seconds]>>\u000a<<endtimedreplace>>\u000a\u000aNot wrapping will have the dialog appear instantly\u000a\u000aNot adding a timestamp will omit it from the text box. Time stamps are optional. \u000a%/\u000a\u000a<<kars_char "Oh hello" "2:05pm">> \u000a\u000a<<timedreplace 2s>>\u000a<<kars_char "This is the right side character saying something" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>>\u000a<<niels_char "This is the left side character saying something" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>>\u000a<<choice [[This choice leads to the second passage|SecondPassage]]>>\u000a<<choice [[This choice also leads to the second passage|SecondPassage]]>>\u000a<<endtimedreplace>>
+p22
+sS'title'
+p23
+VStart
+p24
+sS'modified'
+p25
+ctime
+struct_time
+p26
+((I2017
+I5
+I22
+I14
+I12
+I18
+I0
+I142
+I1
+tp27
+(dp28
+tp29
+Rp30
+sS'tags'
+p31
+(lp32
+Vnobr
+p33
+asS'created'
+p34
+g26
+((I2017
+I3
+I29
+I1
+I0
+I4
+I2
+I88
+I1
+tp35
+(dp36
+tp37
+Rp38
+sbsa(dp39
+g14
+I00
+sg15
+(lp40
+F150.0
+aF150.0
+asg17
+(itiddlywiki
+Tiddler
+p41
+(dp42
+g21
+V<<kars_char "Welcome to the second passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Gee thanks" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>> \u000a<<ianus_char "You can have more than one left side character" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<ianus_char "And each character's bubble can have a different color" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<choice [[This choice leads to another passage|AnotherPassage]]>>\u000a<<choice [[This choice leads to a passage different from the first choice|YetAnotherPassage]]>>\u000a<<endtimedreplace>>
+p43
+sg23
+VSecondPassage
+p44
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I12
+I50
+I0
+I142
+I1
+tp45
+(dp46
+tp47
+Rp48
+sg31
+(lp49
+Vnobr
+p50
+asg34
+g26
+((I2017
+I3
+I29
+I1
+I0
+I21
+I2
+I88
+I1
+tp51
+(dp52
+tp53
+Rp54
+sbsa(dp55
+g14
+I00
+sg15
+(lp56
+F10.0
+aF570.0
+asg17
+(itiddlywiki
+Tiddler
+p57
+(dp58
+g21
+V/* INSERT CUSTOM COLORS FOR BUBBLES BELOW */\u000a\u000a#ianus-char {\u000a    background-color: red;\u000a    /* BUBBLE */\u000a}\u000a#ianus-char::after {\u000a    border-color: red transparent transparent transparent;\u000a    /* BUBBLE TRIANGLE */\u000a}\u000a/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000adiv .title {\u000a    visibility: hidden;\u000a    height: 0px;\u000a}\u000ah1 {\u000a    position: absolute;\u000a    top: 0px;\u000a    padding-top: 30px;\u000a    width: 438px;\u000a    z-index: 2;\u000a    padding-bottom: 30px;\u000a    background-color: #f8f8f8;\u000a}\u000a@media (max-width: 375px) {\u000a    h1 {\u000a        position: fixed;\u000a        width: 100%;\u000a        z-index: 1;\u000a        margin: 0px;\u000a        top: 0px;\u000a    }\u000a}\u000a@media (max-width: 414px) {\u000a    h1 {\u000a        position: fixed;\u000a        width: 100%;\u000a        z-index: 2;\u000a        margin: 0px;\u000a        top: 0px;\u000a    }\u000a}\u000ah2 {\u000a    position: absolute;\u000a    top: 80px;\u000a    width: 438px;\u000a    z-index: 2;\u000a    background-color: #f8f8f8;\u000a}\u000a@media (max-width: 375px) {\u000a    h2 {\u000a        position: fixed;\u000a        width: 100%;\u000a        z-index: 2;\u000a        top: 70px;\u000a    }\u000a}\u000a@media (max-width: 414px) {\u000a    h2 {\u000a        position: fixed;\u000a        width: 100%;\u000a        z-index: 2;\u000a        top: 70px;\u000a    }\u000a}\u000ah3 {\u000a    position: absolute;\u000a    top: 130px;\u000a    width: 438px;\u000a    margin: 0px;\u000a    padding-bottom: 20px;\u000a    border-bottom: 1px solid;\u000a    margin-bottom: 20px;\u000a    z-index: 2;\u000a    background-color: #f8f8f8;\u000a}\u000a@media (max-width: 375px) {\u000a    h3 {\u000a        position: fixed;\u000a        width: 100%;\u000a        z-index: 2;\u000a        top: 80px;\u000a        background-color: #f8f8f8;\u000a        border-bottom: 1px solid;\u000a    }\u000a}\u000a@media (max-width: 414px) {\u000a    h3 {\u000a        position: fixed;\u000a        width: 100%;\u000a        z-index: 2;\u000a        top: 80px;\u000a        background-color: #f8f8f8;\u000a        border-bottom: 1px solid;\u000a    }\u000a}\u000a.toolbar {\u000a    visibility: hidden;\u000a}\u000a.passage:hover .toolbar {\u000a    visibility: hidden;\u000a}\u000abody {\u000a    /* This affects the entire page */\u000a    \u000a    position: relative;\u000a    width: 477px;\u000a    left: 37%;\u000a    background-color: #f8f8f8;\u000a    font-family: 'Roboto', sans-serif;\u000a    "\u000a\u000a}\u000a@media (max-width: 414px) {\u000a    body {\u000a        left: 0px;\u000a        width: 100%;\u000a    }\u000a}\u000a/* no idea why its content2 lol */\u000a\u000a#content1 {\u000a    background-color: #f8f8f8;\u000a    border: 1px solid;\u000a    /*min-height: 1136px;*/\u000a    \u000a    background-color: #f8f8f8;\u000a    border: 1px solid;\u000a    border-radius: 25px;\u000a    border-left-width: 20px;\u000a    border-right-width: 20px;\u000a    border-top-width: 45px;\u000a    border-bottom-width: 55px;\u000a    height: 720px;\u000a    overflow: scroll;\u000a    overflow-x: hidden;\u000a    margin: 0px;\u000a    margin-top: 5%;\u000a}\u000a@media (max-width: 375px) {\u000a    #content1 {\u000a        border: 0px;\u000a        border-radius: 0px;\u000a        height: 100%;\u000a        width: 100%;\u000a        margin: 0px;\u000a        overflow-y: hidden;\u000a    }\u000a}\u000a@media (max-width: 414px) {\u000a    #content1 {\u000a        border: 0px;\u000a        border-radius: 0px;\u000a        height: 100%;\u000a        width: 100%;\u000a        margin: 0px;\u000a        overflow-y: hidden;\u000a    }\u000a}\u000a#content2 {\u000a    height: 720px;\u000a    padding-bottom: 0px;\u000a    display: table-cell;\u000a    vertical-align: bottom;\u000a}\u000a@media (max-width: 375px) {\u000a    #content2 {\u000a        height: 100%\u000a    }\u000a}\u000a#passages {\u000a    padding-bottom: 0px;\u000a    padding-top: 150px;\u000a}\u000a.passage {\u000a    width: 640px background: none;\u000a    margin: 0px;\u000a    /* This only affects passages */\u000a}\u000a.passage:not(:last-child):not(:hover) {\u000a    opacity: 1;\u000a    /* transition: 0.5s;*/\u000a    /* -webkit-transition: 0.5s; */\u000a}\u000a.passage a {\u000a    /* This affects passage links */\u000a    \u000a    color: white;\u000a}\u000a}\u000a.talk-bubble.player.decision {\u000a    width: 400px;\u000a}\u000a.choice {\u000a    font-size: 1.4em;\u000a    padding: 10px;\u000a    text-align: left;\u000a    line-height: 1.2em;\u000a    width: 300px;\u000a    border: 5px #1ca0d5 solid;\u000a    border-radius: 25px;\u000a    background-color: #1ca0d5;\u000a    margin-bottom: 10px;\u000a    left: 40px;\u000a    position: relative;\u000a    top: 10px;\u000a    display: block;\u000a    animation-duration: 0.20s;\u000a    animation-name: slidein_choice;\u000a}\u000a@keyframes slidein_choice {\u000a    from {\u000a        opacity: 0;\u000a        top: 25px;\u000a    }\u000a    to {\u000a        opacity: 1;\u000a        top: 10px;\u000a    }\u000a}\u000a@media (max-width: 375px) {\u000a    .choice {\u000a        z-index: 1;\u000a        width: 200px;\u000a    }\u000a}\u000a.disabled {\u000a    display: none;\u000a}\u000a.content a {\u000a    font-weight: normal;\u000a    text-decoration: underline;\u000a}\u000a.passage a:hover {\u000a    /* This affects links while the cursor is over them */\u000a    \u000a    color: white;\u000a}\u000a.pos-right {\u000a    float: right;\u000a}\u000a.pos-left {\u000a    position: fixed;\u000a    left: 50px;\u000a}\u000a/* General CSS Setup */\u000a\u000abody {}\u000a/* portraits */\u000a\u000aimg.portrait {\u000a    width: 50px;\u000a    height: 50px;\u000a    display: block;\u000a    position: relative;\u000a    float: left;\u000a    /*left: -20;\u000atop: -40px;*/\u000a    \u000a    bottom: 25px;\u000a    margin: 0;\u000a    display: inline-block;\u000a    padding: 0;\u000a}\u000aimg.player-portrait {\u000a    width: 50px;\u000a    height: 50px;\u000a    display: block;\u000a    position: relative;\u000a    float: right;\u000a    right: 10px;\u000a    bottom: 20px;\u000a    margin: 0;\u000a    display: inline-block;\u000a    padding: 0;\u000a}\u000a#char2b {\u000a    background-image: url("smsportraits/2b.png");\u000a    width: 50px;\u000a    height: 50px;\u000a    display: block;\u000a    position: relative;\u000a    float: left;\u000a    /*left: -20;\u000atop: -40px;*/\u000a    \u000a    bottom: 25px;\u000a    margin: 0;\u000a    display: inline-block;\u000a    padding: 0;\u000a}\u000a.text-object {\u000a    display: block;\u000a    width: 425px;\u000a    position: relative;\u000a    /*margin-bottom: 60px;*/\u000a    /*margin-top: -100px;*/\u000a    /*animation-duration: 3s; animation-name: slidein;}\u000a@keyframes slidein \u000a{ \u000afrom \u000a{ margin-left: 100%; height: 300%; } to \u000a{ margin-left: 0%; height: 100%; }*/\u000a    \u000a    animation-duration: 0.50s;\u000a    animation-name: slidein;\u000a}\u000a@keyframes slidein {\u000a    from {\u000a        opacity: 0;\u000a        top: 25px;\u000a    }\u000a    to {\u000a        opacity: 1;\u000a        top: 0px;\u000a    }\u000a}\u000a@media (max-width: 375px) {\u000a    .text-object {\u000a        width: 320px;\u000a    }\u000a}\u000a.text-object.player {\u000a    text-align: right;\u000a}\u000a@media (max-width: 375px) {\u000a    .text-object.player {\u000a        width: 320px;\u000a    }\u000a}\u000a.bubble-object {\u000a    display: inline-block;\u000a    /*float: left; */\u000a    \u000a    position: relative;\u000a    left: 25px;\u000a    /*bottom: 20px;\u000aleft: 10px;*/\u000a}\u000a@media (max-width: 375px) {\u000a    .bubble-object {\u000a        width: 200px;\u000a    }\u000a}\u000a.bubble-object.player {\u000a    left: -25px;\u000a    /*display: inline-block;\u000afloat: right;\u000aposition: relative;\u000abottom: 20px;\u000aright: 10px; trying to fix style today */\u000a}\u000a.talk-bubble.player > .talktext > p {\u000a    padding-right: 1em\u000a}\u000a#char9s {\u000a    background-image: url("smsportraits/9s.png");\u000a    width: 50px;\u000a    height: 50px;\u000a    display: block;\u000a    position: relative;\u000a    float: right;\u000a    right: 10px;\u000a    bottom: 20px;\u000a    margin: 0;\u000a    display: inline-block;\u000a    padding: 0;\u000a}\u000a.timestamp {\u000a    padding: 1em;\u000a    font-size: 0.8em;\u000a    opacity: 0.75;\u000a    display: block;\u000a    margin-bottom: -55px;\u000a}\u000adiv.player > .talktext > span.timestamp {\u000a    font-weight: bold;\u000a    opacity: 0.50\u000a}\u000a/* container */\u000a\u000a.container {\u000a    padding: 5% 5%;\u000a}\u000a/* CSS talk bubble */\u000a\u000a.talk-bubble {\u000a    display: inline-block;\u000a    position: relative;\u000a    min-width: 150px;\u000a    height: auto;\u000a    background-color: orange;\u000a    color: white;\u000a    font-size: 12pt;\u000a}\u000a.talk-bubble.player {\u000a    background-color: #1ca0d5;\u000a    /*color: black;*/\u000a}\u000a@media (max-width: 375px) {\u000a    .talk-bubble.player {\u000a        width: 200px;\u000a    }\u000a}\u000a.border {\u000a    border: 8px solid #666;\u000a}\u000a.round {\u000a    border-radius: 30px;\u000a    -webkit-border-radius: 30px;\u000a    -moz-border-radius: 30px;\u000a}\u000a/* Right triangle placed top left flush. */\u000a\u000a.tri-right.border.left-top:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: -40px;\u000a    right: auto;\u000a    top: -8px;\u000a    bottom: auto;\u000a    border: 32px solid;\u000a    border-color: orange transparent transparent transparent;\u000a}\u000a.tri-right.left-top:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: -15px;\u000a    right: auto;\u000a    top: 0px;\u000a    bottom: auto;\u000a    border: 22px solid;\u000a    border-color: orange transparent transparent transparent;\u000a}\u000a/* Right triangle, left side slightly down */\u000a\u000a.tri-right.border.left-in:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: -40px;\u000a    right: auto;\u000a    top: 30px;\u000a    bottom: auto;\u000a    border: 20px solid;\u000a    border-color: #666 #666 transparent transparent;\u000a}\u000a.tri-right.left-in:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: -20px;\u000a    right: auto;\u000a    top: 38px;\u000a    bottom: auto;\u000a    border: 12px solid;\u000a    border-color: lightyellow lightyellow transparent transparent;\u000a}\u000a/*Right triangle, placed bottom left side slightly in*/\u000a\u000a.tri-right.border.btm-left:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: -8px;\u000a    right: auto;\u000a    top: auto;\u000a    bottom: -40px;\u000a    border: 32px solid;\u000a    border-color: transparent transparent transparent #666;\u000a}\u000a.tri-right.btm-left:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: 0px;\u000a    right: auto;\u000a    top: auto;\u000a    bottom: -20px;\u000a    border: 22px solid;\u000a    border-color: transparent transparent transparent lightyellow;\u000a}\u000a/*Right triangle, placed bottom left side slightly in*/\u000a\u000a.tri-right.border.btm-left-in:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: 30px;\u000a    right: auto;\u000a    top: auto;\u000a    bottom: -40px;\u000a    border: 20px solid;\u000a    border-color: #666 transparent transparent #666;\u000a}\u000a.tri-right.btm-left-in:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: 38px;\u000a    right: auto;\u000a    top: auto;\u000a    bottom: -20px;\u000a    border: 12px solid;\u000a    border-color: lightyellow transparent transparent lightyellow;\u000a}\u000a/*Right triangle, placed bottom right side slightly in*/\u000a\u000a.tri-right.border.btm-right-in:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: 30px;\u000a    bottom: -40px;\u000a    border: 20px solid;\u000a    border-color: #666 #666 transparent transparent;\u000a}\u000a.tri-right.btm-right-in:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: 38px;\u000a    bottom: -20px;\u000a    border: 12px solid;\u000a    border-color: lightyellow lightyellow transparent transparent;\u000a}\u000a/*\u000aleft: -8px;\u000aright: auto;\u000atop: auto;\u000abottom: -40px;\u000aborder: 32px solid;\u000aborder-color: transparent transparent transparent #666;\u000aleft: 0px;\u000aright: auto;\u000atop: auto;\u000abottom: -20px;\u000aborder: 22px solid;\u000aborder-color: transparent transparent transparent lightyellow;\u000a\u000a/*Right triangle, placed bottom right side slightly in*/\u000a\u000a.tri-right.border.btm-right:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: -8px;\u000a    bottom: -40px;\u000a    border: 20px solid;\u000a    border-color: #666 #666 transparent transparent;\u000a}\u000a.tri-right.btm-right:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: 0px;\u000a    bottom: -20px;\u000a    border: 12px solid;\u000a    border-color: lightyellow lightyellow transparent transparent;\u000a}\u000a/* Right triangle, right side slightly down*/\u000a\u000a.tri-right.border.right-in:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: -40px;\u000a    top: 30px;\u000a    bottom: auto;\u000a    border: 20px solid;\u000a    border-color: #orange transparent transparent #666;\u000a}\u000a.tri-right.right-in:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: -20px;\u000a    top: 38px;\u000a    bottom: auto;\u000a    border: 12px solid;\u000a    border-color: lightyellow transparent transparent lightyellow;\u000a}\u000a/* Right triangle placed top right flush. */\u000a\u000a.tri-right.border.right-top:before {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: -40px;\u000a    top: -8px;\u000a    bottom: auto;\u000a    border: 32px solid;\u000a    border-color: #white transparent transparent transparent;\u000a}\u000a/*PLAYER TRIANGLE */\u000a\u000a.tri-right.right-top:after {\u000a    content: ' ';\u000a    position: absolute;\u000a    width: 0;\u000a    height: 0;\u000a    left: auto;\u000a    right: -13px;\u000a    top: 0px;\u000a    bottom: auto;\u000a    border: 25px solid;\u000a    border-color: #1ca0d5 transparent transparent transparent;\u000a}\u000a/* talk bubble contents */\u000a\u000a.talktext {\u000a    padding: 0.5em;\u000a    text-align: left;\u000a    line-height: 1.2em;\u000a    margin-top: -0.5em\u000a}\u000a.talktext p {\u000a    /* remove webkit p margins */\u000a    \u000a    -webkit-margin-before: -1.8em;\u000a    -webkit-margin-after: -1.8em;\u000a    margin-left: 15px;\u000a    word-wrap: break-word;\u000a    max-width: 250px\u000a}\u000a#footer {\u000a    position: absolute;\u000a    bottom: 0px;\u000a    color: white;\u000a}\u000a#footer a.externalLink {\u000a    color: white;\u000a}\u000a@media (max-width: 414px) {\u000a    #footer {\u000a        position: absolute;\u000a        top: 70px;\u000a        z-index: -1;\u000a        color: black;\u000a    }\u000a    #footer a.externalLink {\u000a        color: black;\u000a    }\u000a}
+p59
+sg23
+VStylesheet
+p60
+sg25
+g26
+((I2017
+I5
+I22
+I12
+I47
+I19
+I0
+I142
+I1
+tp61
+(dp62
+tp63
+Rp64
+sg31
+(lp65
+Vstylesheet
+p66
+asg34
+g26
+((I2017
+I3
+I29
+I1
+I0
+I39
+I2
+I88
+I1
+tp67
+(dp68
+tp69
+Rp70
+sbsa(dp71
+g14
+I00
+sg15
+(lp72
+F10.0
+aF710.0
+asg17
+(itiddlywiki
+Tiddler
+p73
+(dp74
+g21
+V(function () {\u000a  version.extensions['timedreplaceMacro'] = {\u000a    major: 2,\u000a    minor: 3,\u000a    revision: 0\u000a  };\u000a  macros['timedcontinue'] = macros['timedinsert'] = macros['timedreplace'] = {\u000a    handler: function (g, e, f, b) {\u000a      function cssTimeUnit(s) {\u000a        if (typeof s == "string") {\u000a          if (s.slice(-2).toLowerCase() == "ms") {\u000a            return Number(s.slice(0, -2)) || 0;\u000a          }\u000a          else if (s.slice(-1).toLowerCase() == "s") {\u000a            return Number(s.slice(0, -1)) * 1000 || 0;\u000a          }\u000a        }\u000a        throwError(g, s + " isn't a CSS time unit");\u000a        return 0;\u000a      }\u000a\u000a      function tagcontents(starttag, endtag, k) {\u000a        var a = b.source.slice(k);\u000a        var l = 0;\u000a        var c = "";\u000a        for (var i = 0; i < a.length; i++) {\u000a          var w = endtag.length;\u000a          if (a.substr(i, w) == endtag) {\u000a            if (l == 0) {\u000a              b.nextMatch = k + i + w;\u000a              return c;\u000a            }\u000a            else {\u000a              l--;\u000a              c += a.charAt(i);\u000a            }\u000a          }\u000a          else {\u000a            if (a.substr(i, starttag.length) == starttag) {\u000a              l++;\u000a            }\u000a            c += a.charAt(i);\u000a          }\u000a        }\u000a        return "";\u000a      }\u000a      var tr = "<<" + e;\u000a      var rw = "<<replacewith>>";\u000a      var etr = "<<end" + e + ">>";\u000a      var k = b.source.indexOf('>>', b.matchStart) + 2;\u000a      var c, d;\u000a	  if (e == "timedcontinue") {\u000a	    d = b.source.slice(k);\u000a		b.nextMatch = k + d.length;\u000a	  }\u000a      else if (e == "timedreplace") {\u000a        c = tagcontents(tr, rw, k);\u000a        d = tagcontents((c ? rw : tr), etr, c ? b.nextMatch : k);\u000a      }\u000a      else if (e == "timedinsert") {\u000a        d = tagcontents(tr, etr, k);\u000a      }\u000a      else if (e == "timedremove") {\u000a        c = tagcontents(tr, etr, k);\u000a      }\u000a      var tm;\u000a      tm = cssTimeUnit(f[0]);\u000a      var h;\u000a      if (c) {\u000a        if (d) {\u000a          g = insertElement(g, "span", null, "timedreplacements");\u000a        }\u000a        h = insertElement(g, "span", null, "timedreplacement timedremove");\u000a        new Wikifier(h, c);\u000a        if (d || e == "timedremove") {\u000a          setTimeout(function () {\u000a            h.classList.add("replacement-out");\u000a            setTimeout(function () {\u000a              h.parentNode.removeChild(h);\u000a            }, 1000);\u000a          }, tm);\u000a        }\u000a      }\u000a      if (d) {\u000a        var m = insertElement(g, "span", null, "timedreplacement timedinsert", d);\u000a        m.style.display = "none";\u000a        setTimeout(function () {\u000a          if (m) {\u000a            var t = m.firstChild ? m.firstChild.nodeValue : "";\u000a            removeChildren(m);\u000a            new Wikifier(m, t);\u000a            m.style.display = "inline";\u000a            m.classList.add("replacement-in");\u000a            setTimeout(function () {\u000a              m.classList.remove("replacement-in");\u000a            }, 1);\u000a            scrollWindowTo(m);\u000a          }\u000a        }, tm);\u000a      }\u000a      else if (!c && e != "timedremove") {\u000a        throwError(g, "can't find matching end" + e);\u000a        return;\u000a      }\u000a    }\u000a  }\u000a  macros['timedremove'] = macros['timedreplace'];\u000a  macros['replacewith'] = macros['endtimedinsert'] = macros['endtimedremove'] = macros['endtimedreplace'] = {\u000a    handler: function () {}\u000a  }\u000a    scrollWindowTo=function(E){var D=window.scrollY?window.scrollY:document.body.scrollTop;\u000a    var G=J(E);if(!G){return;}var C=Math.abs(D-G);var B=0;var I=(D>G)?-1:1;var F=window.setInterval(H,25);\u000adocument.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000adocument.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000a    function H(){B+=0.1;window.scrollTo(0,D+I*(C*Math.easeInOut(B)));if(B>=1){window.clearInterval(F);document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000a    }}function J(N){var O=A(N);var P=O+N.offsetHeight;var K=window.scrollY?window.scrollY:document.body.scrollTop;\u000a    var L=window.innerHeight?window.innerHeight:document.body.clientHeight;var M=K+L;\u000a\u000adocument.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000a    if(O>=K){if(P>M){if(N.offsetHeight<L){return(O-(L-N.offsetHeight)+20);}else{return O;\u000a    }}}}function A(K){var L=0;while(K.offsetParent){L+=K.offsetTop;K=K.offsetParent;}return L;\u000a  document.getElementById('content1').scrollTop = \u000a   document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;  }};\u000a}());\u000a\u000a\u000a
+p75
+sg23
+Vtimedreplace
+p76
+sg25
+g26
+((I2017
+I4
+I4
+I1
+I2
+I51
+I1
+I94
+I1
+tp77
+(dp78
+tp79
+Rp80
+sg31
+(lp81
+Vscript
+p82
+asg34
+g26
+((I2017
+I4
+I1
+I22
+I56
+I30
+I5
+I91
+I1
+tp83
+(dp84
+tp85
+Rp86
+sbsa(dp87
+g14
+I00
+sg15
+(lp88
+F290.0
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p89
+(dp90
+g21
+S'jquery:off\nhash:off\nbookmark:on\nmodernizr:off\nundo:off\nobfuscate:off\nexitprompt:off\nblankcss:off\n'
+p91
+sg23
+VStorySettings
+p92
+sg25
+g26
+((I2017
+I4
+I3
+I0
+I15
+I48
+I0
+I93
+I1
+tp93
+(dp94
+tp95
+Rp96
+sg31
+(lp97
+sg34
+g26
+((I2017
+I4
+I3
+I0
+I15
+I45
+I0
+I93
+I1
+tp98
+(dp99
+tp100
+Rp101
+sbsa(dp102
+g14
+I00
+sg15
+(lp103
+F150.0
+aF430.0
+asg17
+(itiddlywiki
+Tiddler
+p104
+(dp105
+g21
+V<div class="text-object">\u000a<img class="portrait" src="portraits/niels.png"> \u000a<div class="bubble-object">\u000a<div id="niels-char" class="talk-bubble round tri-right left-top">\u000a<div class="talktext">\u000a<p><<print parameter(0)>></p>\u000a<span class="timestamp">\u000a<<if parameter(1) != 0>>\u000a<<print parameter(1) + ",">> \u000a<<endif>>\u000aNiels\u000a</span>\u000a</div>\u000a</div>\u000a</div>\u000a</div>\u000a</div>
+p106
+sg23
+Vniels_char
+p107
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I52
+I50
+I0
+I142
+I1
+tp108
+(dp109
+tp110
+Rp111
+sg31
+(lp112
+Vnobr
+p113
+asg34
+g26
+((I2017
+I4
+I3
+I0
+I30
+I15
+I0
+I93
+I1
+tp114
+(dp115
+tp116
+Rp117
+sbsa(dp118
+g14
+I01
+sg15
+(lp119
+F10.0
+aF430.0
+asg17
+(itiddlywiki
+Tiddler
+p120
+(dp121
+g21
+V<div class="text-object player">\u000a<img class="player-portrait" src="portraits/kars.jpg">\u000a<div class="bubble-object player">\u000a<div id="kars-char" class="talk-bubble round player tri-right right-top">\u000a<div class="talktext">\u000a<p><<print parameter(0)>></p>\u000a<span class="timestamp">\u000a<<if parameter(1) != 0>>\u000a<<print parameter(1) + ",">> \u000a<<endif>>\u000aKars\u000a</span>\u000a</div>\u000a</div>\u000a</div>\u000a</div>\u000a</div>
+p122
+sg23
+Vkars_char
+p123
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I52
+I54
+I0
+I142
+I1
+tp124
+(dp125
+tp126
+Rp127
+sg31
+(lp128
+Vnobr
+p129
+asg34
+g26
+((I2017
+I4
+I3
+I1
+I26
+I30
+I0
+I93
+I1
+tp130
+(dp131
+tp132
+Rp133
+sbsa(dp134
+g14
+I00
+sg15
+(lp135
+F430.0
+aF430.0
+asg17
+(itiddlywiki
+Tiddler
+p136
+(dp137
+g21
+V/%\u000aCHARACTER\u000aThis is a template for a character on the left hand side. Modify the elements below to customize the character. \u000a\u000aThe title for this passage is the name of the character macro you will call to create dialog in the story passages.\u000a%/\u000a\u000a<div class="text-object">\u000a\u000a/%\u000aCHARACTER PORTRAIT:\u000aDIMENSIONS: 50x50\u000aChange the HTML element src below to modify character potrait.\u000aSet src="<filename of portrait>"\u000a%/\u000a<img class="portrait" src="portraits/blank.png" > \u000a\u000a<div class="bubble-object" >\u000a\u000a/%\u000aCHANGE BUBBLE COLORS:\u000a1) Give the div below a unique id\u000aEX: id="ExampleCustomCharacter"\u000a2) Open the Stylesheet and add the following based on the ID name\u000a\u000a#ExampleCustomCharacter{\u000a	background-color: red;\u000a}\u000a#ExampleCustomCharacter::after{\u000a	border-color: red transparent transparent transparent;\u000a}\u000a\u000aExample provided below and in stylesheet\u000a%/\u000a<div id="ExampleCustomCharacter" class="talk-bubble round tri-right left-top">\u000a<div class="talktext">\u000a<p><<print parameter(0)>></p>\u000a<span class="timestamp">\u000a<<if parameter(1) != 0>>\u000a<<print parameter(1) + ",">> \u000a<<endif>>\u000a\u000a/%\u000aCHANGE CHARACTER NAME:\u000aSet the character's "full name" below if you want it to appear\u000a%/\u000aCharacter name goes here\u000a</span>\u000a</div>\u000a</div>\u000a</div>\u000a</div>\u000a</div>
+p138
+sg23
+Vtest_char_left
+p139
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I53
+I1
+I0
+I142
+I1
+tp140
+(dp141
+tp142
+Rp143
+sg31
+(lp144
+Vnobr
+p145
+asg34
+g26
+((I2017
+I4
+I7
+I0
+I1
+I16
+I4
+I97
+I1
+tp146
+(dp147
+tp148
+Rp149
+sbsa(dp150
+g14
+I00
+sg15
+(lp151
+F430.0
+aF150.0
+asg17
+(itiddlywiki
+Tiddler
+p152
+(dp153
+g21
+V<<kars_char "Tada!" "2:05pm">>\u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Wow, you weren't kidding" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>> \u000a<<ianus_char "This is the best, guys" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "I know, right?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 7s>> \u000a<<kars_char "The end." "2:05pm">>\u000a<<endtimedreplace>>\u000a
+p154
+sg23
+VFinalPassage
+p155
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I23
+I17
+I0
+I142
+I1
+tp156
+(dp157
+tp158
+Rp159
+sg31
+(lp160
+Vnobr
+p161
+asg34
+g26
+((I2017
+I4
+I14
+I0
+I38
+I5
+I4
+I104
+I1
+tp162
+(dp163
+tp164
+Rp165
+sbsa(dp166
+g14
+I00
+sg15
+(lp167
+F290.0
+aF430.0
+asg17
+(itiddlywiki
+Tiddler
+p168
+(dp169
+g21
+V<div class="text-object">\u000a<img class="portrait" src="portraits/ianus.jpg" > \u000a<div class="bubble-object">\u000a<div id="ianus-char" class="talk-bubble round tri-right left-top">\u000a<div class="talktext">\u000a<p><<print parameter(0)>></p>\u000a<span class="timestamp">\u000a<<if parameter(1) != 0>>\u000a<<print parameter(1) + ",">> \u000a<<endif>>\u000aIanus\u000a</span>\u000a</div>\u000a</div>\u000a</div>\u000a</div>\u000a</div>
+p170
+sg23
+Vianus_char
+p171
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I52
+I57
+I0
+I142
+I1
+tp172
+(dp173
+tp174
+Rp175
+sg31
+(lp176
+Vnobr
+p177
+asg34
+g26
+((I2017
+I4
+I14
+I0
+I51
+I56
+I4
+I104
+I1
+tp178
+(dp179
+tp180
+Rp181
+sbsa(dp182
+g14
+I00
+sg15
+(lp183
+F10.0
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p184
+(dp185
+g21
+VTTP Starter Project
+p186
+sg23
+VStoryTitle
+p187
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I42
+I49
+I0
+I142
+I1
+tp188
+(dp189
+tp190
+Rp191
+sg31
+(lp192
+sg34
+g26
+((I2017
+I4
+I14
+I1
+I1
+I37
+I4
+I104
+I1
+tp193
+(dp194
+tp195
+Rp196
+sbsa(dp197
+g14
+I00
+sg15
+(lp198
+F150.0
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p199
+(dp200
+g21
+V[[@kaeru|https://twitter.com/kaeru]], based on work by [[@shindags|https://twitter.com/shindags/]]
+p201
+sg23
+VStoryAuthor
+p202
+sg25
+g26
+((I2017
+I5
+I22
+I12
+I20
+I21
+I0
+I142
+I1
+tp203
+(dp204
+tp205
+Rp206
+sg31
+(lp207
+sg34
+g26
+((I2017
+I4
+I14
+I1
+I1
+I47
+I4
+I104
+I1
+tp208
+(dp209
+tp210
+Rp211
+sbsa(dp212
+g14
+I00
+sg15
+(lp213
+F150.0
+aF710.0
+asg17
+(itiddlywiki
+Tiddler
+p214
+(dp215
+g21
+Vversion.extensions.timedgotoMacro={major:1,minor:2,revision:0};\u000amacros["goto"]=macros.timedgoto={timer:null,handler:function(a,b,c,d){function cssTimeUnit(s){if(typeof s=="string"){if(s.slice(-2).toLowerCase()=="ms"){return +(s.slice(0,-2))||0\u000a}else{if(s.slice(-1).toLowerCase()=="s"){return +(s.slice(0,-1))*1000||0\u000a}}}throwError(a,s+" isn't a CSS time unit");return 0}var t,d,m,s;\u000at=c[c.length-1];d=d.fullArgs();m=0;if(b!="goto"){d=d.slice(0,d.lastIndexOf(t));\u000am=cssTimeUnit(t)}d=eval(Wikifier.parse(d));if(d+""&&state&&state.init){if(macros["goto"].timer){clearTimeout(macros["goto"].timer)\u000a}s=state.history[0].passage.title;macros["goto"].timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a)\u000a}},m)}}};
+p216
+sg23
+Vtimedgoto
+p217
+sg25
+g26
+((I2017
+I4
+I14
+I1
+I6
+I58
+I4
+I104
+I1
+tp218
+(dp219
+tp220
+Rp221
+sg31
+(lp222
+Vscript
+p223
+asg34
+g26
+((I2017
+I4
+I14
+I1
+I6
+I54
+I4
+I104
+I1
+tp224
+(dp225
+tp226
+Rp227
+sbsa(dp228
+g14
+I00
+sg15
+(lp229
+F290.0
+aF290.0
+asg17
+(itiddlywiki
+Tiddler
+p230
+(dp231
+g21
+V<<kars_char "Here's yet another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Man\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<kars_char "Next, we'll load the final passage on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedreplace 5s>> \u000a<<timedgoto "FinalPassage" 0.01s >>\u000a<<endtimedreplace>>\u000a
+p232
+sg23
+VYetAnotherPassage
+p233
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I14
+I36
+I0
+I142
+I1
+tp234
+(dp235
+tp236
+Rp237
+sg31
+(lp238
+Vnobr
+p239
+asg34
+g26
+((I2017
+I5
+I22
+I14
+I7
+I6
+I0
+I142
+I1
+tp240
+(dp241
+tp242
+Rp243
+sbsa(dp244
+g14
+I00
+sg15
+(lp245
+F290.0
+aF150.0
+asg17
+(itiddlywiki
+Tiddler
+p246
+(dp247
+g21
+V<<kars_char "Here's another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Okay, great" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<ianus_char "What else can we do?" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "Load passages on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<niels_char "For real?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<kars_char "Wait for it\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedreplace 10s>> \u000a<<timedgoto "FinalPassage" 0.01s >>\u000a<<endtimedreplace>>
+p248
+sg23
+VAnotherPassage
+p249
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I21
+I48
+I0
+I142
+I1
+tp250
+(dp251
+tp252
+Rp253
+sg31
+(lp254
+Vnobr
+p255
+asg34
+g26
+((I2017
+I5
+I22
+I14
+I7
+I6
+I0
+I142
+I1
+tp256
+(dp257
+tp258
+Rp259
+sbsa(dp260
+g14
+I00
+sg15
+(lp261
+F570.0
+aF430.0
+asg17
+(itiddlywiki
+Tiddler
+p262
+(dp263
+g21
+V/%\u000aPLAYER CHARACTER\u000aThis is a template for a character on the right side, typically the player character. Modify the elements below to customize the character. \u000a\u000aThe title for this passage is the name of the character macro you will call to create dialog in the story passages.\u000a%/\u000a\u000a<div class="text-object player">\u000a\u000a/%\u000aCHARACTER PORTRAIT:\u000aDIMENSIONS: 50x50\u000aChange the HTML element src below to modify character potrait.\u000aSet src="<filename of portrait>"\u000a%/\u000a<img class="player-portrait" src="portraits/blank.png">\u000a\u000a<div class="bubble-object player">\u000a  \u000a/%\u000aCHANGE BUBBLE COLORS:\u000aAdd unique id to the div below, and then edit the corresponding colors in the stylesheet. \u000a%/\u000a<div id="unique-id-goes-here" class="talk-bubble round player tri-right right-top">\u000a<div class="talktext">\u000a<p><<print parameter(0)>></p>\u000a<span class="timestamp">\u000a<<if parameter(1) != 0>>\u000a<<print parameter(1) + ",">> \u000a<<endif>>\u000a\u000a/%\u000aCHANGE CHARACTER NAME:\u000aSet the character's "full name" below if you want it to appear\u000a%/\u000aCharacter name goes here\u000a</span>\u000a</div>\u000a</div>\u000a</div>\u000a</div>\u000a</div>
+p264
+sg23
+Vtest_char_right
+p265
+sg25
+g26
+((I2017
+I5
+I22
+I14
+I53
+I5
+I0
+I142
+I1
+tp266
+(dp267
+tp268
+Rp269
+sg31
+(lp270
+Vnobr
+p271
+asg34
+g26
+((I2017
+I4
+I3
+I1
+I26
+I30
+I0
+I93
+I1
+tp272
+(dp273
+tp274
+Rp275
+sbsasS'scale'
+p276
+F1.0
+sS'snapping'
+p277
+I01
+ss.
