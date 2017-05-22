@@ -342,7 +342,7 @@ tp116
 Rp117
 sbsa(dp118
 g14
-I01
+I00
 sg15
 (lp119
 F10.0
@@ -702,7 +702,7 @@ tp226
 Rp227
 sbsa(dp228
 g14
-I00
+I01
 sg15
 (lp229
 F290.0
@@ -713,7 +713,7 @@ Tiddler
 p230
 (dp231
 g21
-V<<kars_char "Here's yet another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Man\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<kars_char "Next, we'll load the final passage on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedreplace 5s>> \u000a<<timedgoto "FinalPassage" 0.01s >>\u000a<<endtimedreplace>>\u000a
+V<<kars_char "Here's yet another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Man\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<kars_char "Next, we'll load the final passage on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedgoto "FinalPassage" 10s >>
 p232
 sg23
 VYetAnotherPassage
@@ -723,9 +723,9 @@ g26
 ((I2017
 I5
 I22
-I14
-I14
-I36
+I16
+I23
+I32
 I0
 I142
 I1
@@ -765,7 +765,7 @@ Tiddler
 p246
 (dp247
 g21
-V<<kars_char "Here's another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Okay, great" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<ianus_char "What else can we do?" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "Load passages on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<niels_char "For real?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<kars_char "Wait for it\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedreplace 10s>> \u000a<<timedgoto "FinalPassage" 0.01s >>\u000a<<endtimedreplace>>
+V<<kars_char "Here's another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Okay, great" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<ianus_char "What else can we do?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "Load passages on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<niels_char "For real?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<kars_char "Wait for it\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedgoto "FinalPassage" 10s >>
 p248
 sg23
 VAnotherPassage
@@ -775,9 +775,9 @@ g26
 ((I2017
 I5
 I22
-I14
-I21
-I48
+I15
+I19
+I59
 I0
 I142
 I1
