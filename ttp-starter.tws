@@ -199,7 +199,7 @@ Tiddler
 p73
 (dp74
 g21
-V(function () {\u000a  version.extensions['timedreplaceMacro'] = {\u000a    major: 2,\u000a    minor: 3,\u000a    revision: 0\u000a  };\u000a  macros['timedcontinue'] = macros['timedinsert'] = macros['timedreplace'] = {\u000a    handler: function (g, e, f, b) {\u000a      function cssTimeUnit(s) {\u000a        if (typeof s == "string") {\u000a          if (s.slice(-2).toLowerCase() == "ms") {\u000a            return Number(s.slice(0, -2)) || 0;\u000a          }\u000a          else if (s.slice(-1).toLowerCase() == "s") {\u000a            return Number(s.slice(0, -1)) * 1000 || 0;\u000a          }\u000a        }\u000a        throwError(g, s + " isn't a CSS time unit");\u000a        return 0;\u000a      }\u000a\u000a      function tagcontents(starttag, endtag, k) {\u000a        var a = b.source.slice(k);\u000a        var l = 0;\u000a        var c = "";\u000a        for (var i = 0; i < a.length; i++) {\u000a          var w = endtag.length;\u000a          if (a.substr(i, w) == endtag) {\u000a            if (l == 0) {\u000a              b.nextMatch = k + i + w;\u000a              return c;\u000a            }\u000a            else {\u000a              l--;\u000a              c += a.charAt(i);\u000a            }\u000a          }\u000a          else {\u000a            if (a.substr(i, starttag.length) == starttag) {\u000a              l++;\u000a            }\u000a            c += a.charAt(i);\u000a          }\u000a        }\u000a        return "";\u000a      }\u000a      var tr = "<<" + e;\u000a      var rw = "<<replacewith>>";\u000a      var etr = "<<end" + e + ">>";\u000a      var k = b.source.indexOf('>>', b.matchStart) + 2;\u000a      var c, d;\u000a	  if (e == "timedcontinue") {\u000a	    d = b.source.slice(k);\u000a		b.nextMatch = k + d.length;\u000a	  }\u000a      else if (e == "timedreplace") {\u000a        c = tagcontents(tr, rw, k);\u000a        d = tagcontents((c ? rw : tr), etr, c ? b.nextMatch : k);\u000a      }\u000a      else if (e == "timedinsert") {\u000a        d = tagcontents(tr, etr, k);\u000a      }\u000a      else if (e == "timedremove") {\u000a        c = tagcontents(tr, etr, k);\u000a      }\u000a      var tm;\u000a      tm = cssTimeUnit(f[0]);\u000a      var h;\u000a      if (c) {\u000a        if (d) {\u000a          g = insertElement(g, "span", null, "timedreplacements");\u000a        }\u000a        h = insertElement(g, "span", null, "timedreplacement timedremove");\u000a        new Wikifier(h, c);\u000a        if (d || e == "timedremove") {\u000a          setTimeout(function () {\u000a            h.classList.add("replacement-out");\u000a            setTimeout(function () {\u000a              h.parentNode.removeChild(h);\u000a            }, 1000);\u000a          }, tm);\u000a        }\u000a      }\u000a      if (d) {\u000a        var m = insertElement(g, "span", null, "timedreplacement timedinsert", d);\u000a        m.style.display = "none";\u000a        setTimeout(function () {\u000a          if (m) {\u000a            var t = m.firstChild ? m.firstChild.nodeValue : "";\u000a            removeChildren(m);\u000a            new Wikifier(m, t);\u000a            m.style.display = "inline";\u000a            m.classList.add("replacement-in");\u000a            setTimeout(function () {\u000a              m.classList.remove("replacement-in");\u000a            }, 1);\u000a            scrollWindowTo(m);\u000a          }\u000a        }, tm);\u000a      }\u000a      else if (!c && e != "timedremove") {\u000a        throwError(g, "can't find matching end" + e);\u000a        return;\u000a      }\u000a    }\u000a  }\u000a  macros['timedremove'] = macros['timedreplace'];\u000a  macros['replacewith'] = macros['endtimedinsert'] = macros['endtimedremove'] = macros['endtimedreplace'] = {\u000a    handler: function () {}\u000a  }\u000a    scrollWindowTo=function(E){var D=window.scrollY?window.scrollY:document.body.scrollTop;\u000a    var G=J(E);if(!G){return;}var C=Math.abs(D-G);var B=0;var I=(D>G)?-1:1;var F=window.setInterval(H,25);\u000adocument.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000adocument.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000a    function H(){B+=0.1;window.scrollTo(0,D+I*(C*Math.easeInOut(B)));if(B>=1){window.clearInterval(F);document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000a    }}function J(N){var O=A(N);var P=O+N.offsetHeight;var K=window.scrollY?window.scrollY:document.body.scrollTop;\u000a    var L=window.innerHeight?window.innerHeight:document.body.clientHeight;var M=K+L;\u000a\u000adocument.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;\u000a\u000a    if(O>=K){if(P>M){if(N.offsetHeight<L){return(O-(L-N.offsetHeight)+20);}else{return O;\u000a    }}}}function A(K){var L=0;while(K.offsetParent){L+=K.offsetTop;K=K.offsetParent;}return L;\u000a  document.getElementById('content1').scrollTop = \u000a   document.getElementById('content1').scrollHeight;\u000a\u000adocument.body.scrollTop = document.getElementById('content1').scrollTop = \u000a    document.getElementById('content1').scrollHeight;  }};\u000a}());\u000a\u000a\u000a
+V(function(){version.extensions['timedreplaceMacro']={major:2,minor:3,revision:0};macros['timedcontinue']=macros['timedinsert']=macros['timedreplace']={handler:function(g,e,f,b){function cssTimeUnit(s){if(typeof s=="string"){if(s.slice(-2).toLowerCase()=="ms"){return Number(s.slice(0,-2))||0}else if(s.slice(-1).toLowerCase()=="s"){return Number(s.slice(0,-1))*1000||0}}throwError(g,s+" isn't a CSS time unit");return 0}function tagcontents(starttag,endtag,k){var a=b.source.slice(k);var l=0;var c="";for(var i=0;i<a.length;i+=1){var w=endtag.length;if(a.substr(i,w)==endtag){if(l==0){b.nextMatch=k+i+w;return c}else{l-=1;c+=a.charAt(i)}}else{if(a.substr(i,starttag.length)==starttag){l+=1}c+=a.charAt(i)}}return ""}var tr="<<"+e;var rw="<<replacewith>>";var etr="<<end"+e+">>";var k=b.source.indexOf('>>',b.matchStart)+2;var c,d;if(e=="timedcontinue"){d=b.source.slice(k);b.nextMatch=k+d.length}else if(e=="timedreplace"){c=tagcontents(tr,rw,k);d=tagcontents((c?rw:tr),etr,c?b.nextMatch:k)}else if(e=="timedinsert"){d=tagcontents(tr,etr,k)}else if(e=="timedremove"){c=tagcontents(tr,etr,k)}var tm;tm=cssTimeUnit(f[0]);var h;if(c){if(d){g=insertElement(g,"span",null,"timedreplacements")}h=insertElement(g,"span",null,"timedreplacement timedremove");new Wikifier(h,c);if(d||e=="timedremove"){setTimeout(function(){h.classList.add("replacement-out");setTimeout(function(){h.parentNode.removeChild(h)},1000)},tm)}}if(d){var m=insertElement(g,"span",null,"timedreplacement timedinsert",d);m.style.display="none";setTimeout(function(){if(m){var t=m.firstChild?m.firstChild.nodeValue:"";removeChildren(m);new Wikifier(m,t);m.style.display="inline";m.classList.add("replacement-in");setTimeout(function(){m.classList.remove("replacement-in")},1);scrollWindowTo(m)}},tm)}else if(!c&&e!="timedremove"){throwError(g,"can't find matching end"+e);return}}};macros['timedremove']=macros['timedreplace'];macros['replacewith']=macros['endtimedinsert']=macros['endtimedremove']=macros['endtimedreplace']={handler:function(){}};scrollWindowTo=function(E){var D=window.scrollY?window.scrollY:document.body.scrollTop;var G=J(E);if(!G){return}var C=Math.abs(D-G);var B=0;var I=(D>G)?-1:1;var F=window.setInterval(H,25);document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;document.body.scrollTop=document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;function H(){B+=0.1;window.scrollTo(0,D+I*(C*Math.easeInOut(B)));if(B>=1){window.clearInterval(F);document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;document.body.scrollTop=document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight}}function J(N){var O=A(N);var P=O+N.offsetHeight;var K=window.scrollY?window.scrollY:document.body.scrollTop;var L=window.innerHeight?window.innerHeight:document.body.clientHeight;var M=K+L;document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;document.body.scrollTop=document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;if(O>=K){if(P>M){if(N.offsetHeight<L){return(O-(L-N.offsetHeight)+20)}else{return O}}}}function A(K){var L=0;while(K.offsetParent){L+=K.offsetTop;K=K.offsetParent}return L;document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight;document.body.scrollTop=document.getElementById('content1').scrollTop=document.getElementById('content1').scrollHeight}}}());
 p75
 sg23
 Vtimedreplace
@@ -207,13 +207,13 @@ p76
 sg25
 g26
 ((I2017
-I4
-I4
+I5
+I23
+I21
+I0
+I22
 I1
-I2
-I51
-I1
-I94
+I143
 I1
 tp77
 (dp78
@@ -661,7 +661,7 @@ Tiddler
 p214
 (dp215
 g21
-Vversion.extensions.timedgotoMacro={major:1,minor:2,revision:0};\u000amacros["goto"]=macros.timedgoto={timer:null,handler:function(a,b,c,d){function cssTimeUnit(s){if(typeof s=="string"){if(s.slice(-2).toLowerCase()=="ms"){return +(s.slice(0,-2))||0\u000a}else{if(s.slice(-1).toLowerCase()=="s"){return +(s.slice(0,-1))*1000||0\u000a}}}throwError(a,s+" isn't a CSS time unit");return 0}var t,d,m,s;\u000at=c[c.length-1];d=d.fullArgs();m=0;if(b!="goto"){d=d.slice(0,d.lastIndexOf(t));\u000am=cssTimeUnit(t)}d=eval(Wikifier.parse(d));if(d+""&&state&&state.init){if(macros["goto"].timer){clearTimeout(macros["goto"].timer)\u000a}s=state.history[0].passage.title;macros["goto"].timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a)\u000a}},m)}}};
+Vversion.extensions.timedgotoMacro={major:1,minor:2,revision:0};macros["goto"]=macros.timedgoto={timer:null,handler:function(a,b,c,d){function cssTimeUnit(s){if(typeof s=="string"){if(s.slice(-2).toLowerCase()=="ms"){return+(s.slice(0,-2))||0}else{if(s.slice(-1).toLowerCase()=="s"){return+(s.slice(0,-1))*1000||0}}}throwError(a,s+" isn't a CSS time unit");return 0}var t,d,m,s;t=c[c.length-1];d=d.fullArgs();m=0;if(b!="goto"){d=d.slice(0,d.lastIndexOf(t));m=cssTimeUnit(t)}d=eval(Wikifier.parse(d));if(d+""&&state&&state.init){if(macros["goto"].timer){clearTimeout(macros["goto"].timer)}s=state.history[0].passage.title;macros["goto"].timer=setTimeout(function(){if(state.history[0].passage.title==s){state.display(d,a)}},m)}}};
 p216
 sg23
 Vtimedgoto
@@ -669,13 +669,13 @@ p217
 sg25
 g26
 ((I2017
-I4
-I14
+I5
+I23
+I21
+I0
+I39
 I1
-I6
-I58
-I4
-I104
+I143
 I1
 tp218
 (dp219
