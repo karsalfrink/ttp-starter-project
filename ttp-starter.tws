@@ -5,7 +5,7 @@ V/Users/Kars/Desktop/ttp-starter-project/ttp-starter.html
 p2
 sS'saveDestination'
 p3
-V/Users/Kars/Desktop/ttp-starter-project/ttp-starter.tws
+V/Users/Kars/Projects/ttp-starter-project/ttp-starter.tws
 p4
 sS'metadata'
 p5
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V/%\u000aDialog begins here\u000aWrap your dialog macros around \u000a<<timedreplace [seconds]>>\u000a<<endtimedreplace>>\u000a\u000aNot wrapping will have the dialog appear instantly\u000a\u000aNot adding a timestamp will omit it from the text box. Time stamps are optional. \u000a%/\u000a\u000a<<kars_char "Oh hello" "2:05pm">> \u000a\u000a<<timedreplace 2s>>\u000a<<kars_char "This is the right side character saying something" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>>\u000a<<niels_char "This is the left side character saying something" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>>\u000a<<choice [[This choice leads to the second passage|SecondPassage]]>>\u000a<<choice [[This choice also leads to the second passage|SecondPassage]]>>\u000a<<endtimedreplace>>
+V/%\u000aDialog begins here\u000aWrap your dialog macros around \u000a<<timedreplace [seconds]>>\u000a<<endtimedreplace>>\u000a\u000aNot wrapping will have the dialog appear instantly\u000a\u000aNot adding a timestamp will omit it from the text box. Time stamps are optional. \u000a%/\u000a\u000a<<kars_char "Oh hello" "20:35">> \u000a\u000a<<timedreplace 2s>>\u000a<<kars_char "This is the right side character saying something" "20:35">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>>\u000a<<niels_char "This is the left side character saying something" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>>\u000a<<choice [[This choice leads to the second passage|SecondPassage]]>>\u000a<<choice [[This choice also leads to the second passage|SecondPassage]]>>\u000a<<endtimedreplace>>
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2017
 I5
-I22
-I14
-I12
-I18
-I0
-I142
+I23
+I20
+I52
+I38
+I1
+I143
 I1
 tp27
 (dp28
@@ -95,7 +95,7 @@ Tiddler
 p41
 (dp42
 g21
-V<<kars_char "Welcome to the second passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Gee thanks" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>> \u000a<<ianus_char "You can have more than one left side character" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<ianus_char "And each character's bubble can have a different color" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<choice [[This choice leads to another passage|AnotherPassage]]>>\u000a<<choice [[This choice leads to a passage different from the first choice|YetAnotherPassage]]>>\u000a<<endtimedreplace>>
+V<<kars_char "Welcome to the second passage" "20:36">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Gee thanks" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>> \u000a<<ianus_char "You can have more than one left side character" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<ianus_char "And each character's bubble can have a different color" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<choice [[This choice leads to another passage|AnotherPassage]]>>\u000a<<choice [[This choice leads to a passage different from the first choice|YetAnotherPassage]]>>\u000a<<endtimedreplace>>
 p43
 sg23
 VSecondPassage
@@ -104,12 +104,12 @@ sg25
 g26
 ((I2017
 I5
-I22
-I14
-I12
-I50
-I0
-I142
+I23
+I20
+I49
+I18
+I1
+I143
 I1
 tp45
 (dp46
@@ -457,7 +457,7 @@ Tiddler
 p152
 (dp153
 g21
-V<<kars_char "Tada!" "2:05pm">>\u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Wow, you weren't kidding" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>> \u000a<<ianus_char "This is the best, guys" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "I know, right?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 7s>> \u000a<<kars_char "The end." "2:05pm">>\u000a<<endtimedreplace>>\u000a
+V<<kars_char "Tada!" "20:37">>\u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Wow, you weren't kidding" "20:37">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 4s>> \u000a<<ianus_char "This is the best, guys" "20:37">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "I know, right?" "20:37">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 7s>> \u000a<<kars_char "The end." "20:37">>\u000a<<endtimedreplace>>\u000a
 p154
 sg23
 VFinalPassage
@@ -466,12 +466,12 @@ sg25
 g26
 ((I2017
 I5
-I22
-I14
 I23
-I17
-I0
-I142
+I20
+I52
+I23
+I1
+I143
 I1
 tp156
 (dp157
@@ -702,7 +702,7 @@ tp226
 Rp227
 sbsa(dp228
 g14
-I01
+I00
 sg15
 (lp229
 F290.0
@@ -713,7 +713,7 @@ Tiddler
 p230
 (dp231
 g21
-V<<kars_char "Here's yet another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Man\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<kars_char "Next, we'll load the final passage on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedgoto "FinalPassage" 10s >>
+V<<kars_char "Here's yet another passage" "20:36">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Man\u2026" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<kars_char "Next, we'll load the final passage on a timer" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedgoto "FinalPassage" 10s >>
 p232
 sg23
 VYetAnotherPassage
@@ -722,12 +722,12 @@ sg25
 g26
 ((I2017
 I5
-I22
-I16
 I23
-I32
-I0
-I142
+I20
+I51
+I52
+I1
+I143
 I1
 tp234
 (dp235
@@ -765,7 +765,7 @@ Tiddler
 p246
 (dp247
 g21
-V<<kars_char "Here's another passage" "2:05pm">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Okay, great" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<ianus_char "What else can we do?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "Load passages on a timer" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<niels_char "For real?" "2:05pm">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<kars_char "Wait for it\u2026" "2:05pm">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedgoto "FinalPassage" 10s >>
+V<<kars_char "Here's another passage" "20:36">> \u000a\u000a<<timedreplace 2s>> \u000a<<niels_char "Okay, great" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 3s>> \u000a<<ianus_char "What else can we do?" "20:36">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 5s>> \u000a<<kars_char "Load passages on a timer" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 6s>> \u000a<<niels_char "For real?" "20:36">>\u000a<<endtimedreplace>>\u000a\u000a<<timedreplace 8s>> \u000a<<kars_char "Wait for it\u2026" "20:36">> \u000a<<endtimedreplace>>\u000a\u000a/% autojump %/\u000a<<timedgoto "FinalPassage" 10s >>
 p248
 sg23
 VAnotherPassage
@@ -774,12 +774,12 @@ sg25
 g26
 ((I2017
 I5
-I22
-I15
-I19
-I59
-I0
-I142
+I23
+I20
+I50
+I43
+I1
+I143
 I1
 tp250
 (dp251
