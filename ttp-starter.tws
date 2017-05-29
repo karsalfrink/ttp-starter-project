@@ -858,7 +858,7 @@ tp274
 Rp275
 sbsa(dp276
 g14
-I00
+I01
 sg15
 (lp277
 F570.0
@@ -869,7 +869,7 @@ Tiddler
 p278
 (dp279
 g21
-V/% \u000aThis message will appear instantly.\u000aThe name should match the character who says it.\u000aThe timestamp can be anything really, and is optional.\u000a%/\u000a<<character_passage_title "Message text" "00:00">> \u000a\u000a/% \u000aThis message will appear after the amount of seconds specified in the 'timedreplace' macro.\u000a%/\u000a<<timedreplace 99s>>\u000a<<character_passage_name "Message text" "00:00">> \u000a<<endtimedreplace>>\u000a\u000a/% \u000aThe 'timedgot'o macro loads the passage specified after the amount of seconds specified.\u000a%/\u000a<<timedgoto "PassageTitle" 99s >>
+V/% \u000aThis message will appear instantly.\u000aThe name should match the character who says it.\u000aThe timestamp can be anything really, and is optional.\u000a%/\u000a<<character_passage_title "Message text" "00:00">> \u000a\u000a/% \u000aThis message will appear after the amount of seconds specified in the 'timedreplace' macro.\u000a%/\u000a<<timedreplace 99s>>\u000a<<character_passage_name "Message text" "00:00">> \u000a<<endtimedreplace>>\u000a\u000a/%\u000aThis is a choice macro. Choices lead to passages. It can be wrapped in a 'timedreplace' macro for timing purposes.\u000a%/\u000a<<choice [[Choice label|PassageTitle]]>>\u000a\u000a/% \u000aThe 'timedgot'o macro loads the passage specified after the amount of seconds specified.\u000a%/\u000a<<timedgoto "PassageTitle" 99s >>
 p280
 sg23
 VExamplePassage
@@ -878,12 +878,12 @@ sg25
 g26
 ((I2017
 I5
-I23
-I20
-I58
-I52
-I1
-I143
+I29
+I10
+I7
+I54
+I0
+I149
 I1
 tp282
 (dp283
